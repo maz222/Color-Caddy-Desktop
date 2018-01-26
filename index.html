@@ -1,0 +1,140 @@
+<html>
+	<head>
+		<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+      	<script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+
+      	<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:500i,700" rel="stylesheet">
+		
+      	<script src="ColorUtilities.js"></script>
+      	<script src="logic.js"></script>
+		<script src="expand.js"></script>
+
+		<script src="https://use.fontawesome.com/e0f9d776cd.js"></script>
+	</head>
+	<body>
+		<header id="banner">
+			<h1>Color Caddy</h1>
+		</header>
+		<div id="primary-color">
+			<div class="panel" id="primary-overview">
+				<div class="color-square" id="primary-square"></div>
+			</div>
+			<form>
+				<div class="panel" id="primary-editor">
+					<input type="text" class="field" id="hex-field"/>
+					<button id="random-button" type="button"><i class="fa fa-random" aria-hidden="true"></i></button>
+					<div class="color-input">
+						<input type="text" value="155" class="field color-field" id="red-field"/>
+						<div class="color-slider" id="red-slider"></div>
+					</div>
+					<div class="color-input">
+						<input type="text" value="155" class="field color-field" id="green-field"/>
+						<div class="color-slider" id="green-slider"></div>
+					</div>
+					<div class="color-input">
+						<input type="text" value="155" class="field color-field" id="blue-field"/>
+						<div class="color-slider" id="blue-slider"></div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div id="schemes">
+			<div class="scheme" id="complementary">
+				<div class="panel scheme-overview">
+					<h3 class="scheme-label">Complementary</h3>
+					<div class="scheme-colors">
+						<button class="color-square left-border" type="button"></button>
+						<button class="color-square right-border" type="button"></button>
+					</div>
+					<div class="scheme-hex">
+						<button type="button" class="hex-label start-label"></button>
+						<button type="button" class="hex-label end-label"></button>
+					</div>
+				</div>
+			</div>
+			<div class="scheme" id="analog">
+				<div class="panel scheme-overview">
+					<h3 class="scheme-label">Analog</h3>
+					<div class="scheme-colors">
+						<button class="color-square left-border" type="button"></button>
+						<button class="color-square" type="button"></button>
+						<button class="color-square right-border" type="button"></button>
+					</div>
+					<div class="scheme-hex">
+						<button type="button" class="hex-label start-label"></button>
+						<button type="button" class="hex-label"></button>
+						<button type="button" class="hex-label end-label"></button>
+					</div>
+				</div>
+			</div>
+			<div class="scheme" id="split">
+				<div class="panel scheme-overview">
+					<h3 class="scheme-label">Split</h3>
+					<div class="scheme-colors">
+						<button class="color-square left-border" type="button"></button>
+						<button class="color-square" type="button"></button>
+						<button class="color-square right-border" type="button"></button>
+					</div>
+					<div class="scheme-hex">
+						<button type="button" class="hex-label start-label"></button>
+						<button type="button" class="hex-label"></button>
+						<button type="button" class="hex-label end-label"></button>
+					</div>
+				</div>
+			</div>
+			<div class="scheme" id="triad">
+				<div class="panel scheme-overview">
+					<h3 class="scheme-label">Triad</h3>
+					<div class="scheme-colors">
+						<button class="color-square left-border" type="button"></button>
+						<button class="color-square" type="button"></button>
+						<button class="color-square right-border" type="button"></button>
+					</div>
+					<div class="scheme-hex">
+						<button type="button" class="hex-label start-label"></button>
+						<button type="button" class="hex-label"></button>
+						<button type="button" class="hex-label end-label"></button>
+					</div>
+				</div>
+			</div>
+			<div class="scheme" id="tetradic">
+				<div class="panel scheme-overview">
+					<h3 class="scheme-label">Tetradic</h3>
+					<div class="scheme-colors">
+						<button class="color-square left-border" type="button"></button>
+						<button class="color-square" type="button"></button>
+						<button class="color-square" type="button"></button>
+						<button class="color-square right-border" type="button"></button>
+					</div>
+					<div class="scheme-hex">
+						<button type="button" class="hex-label start-label"></button>
+						<button type="button" class="hex-label"></button>
+						<button type="button" class="hex-label"></button>
+						<button type="button" class="hex-label end-label"></button>
+					</div>
+				</div>
+			</div>
+			<div class="scheme" id="square">
+				<div class="panel scheme-overview">
+					<h3 class="scheme-label">Square</h3>
+					<div class="scheme-colors">
+						<button class="color-square left-border" type="button"></button>
+						<button class="color-square" type="button"></button>
+						<button class="color-square" type="button"></button>
+						<button class="color-square right-border" type="button"></button>
+					</div>
+					<div class="scheme-hex">
+						<button type="button" class="hex-label start-label"></button>
+						<button type="button" class="hex-label"></button>
+						<button type="button" class="hex-label"></button>
+						<button type="button" class="hex-label end-label"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
