@@ -32,7 +32,7 @@ button, input {
 }
 #primary-editor {
 	display: flex;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.4);
 	height: 50px;
 	align-items: center;
 	justify-content: center;
